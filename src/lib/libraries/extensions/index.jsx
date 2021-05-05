@@ -46,6 +46,8 @@ import gdxforInsetIconURL from './gdxfor/gdxfor-small.svg';
 import gdxforConnectionIconURL from './gdxfor/gdxfor-illustration.svg';
 import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
 
+import camroboIconURL from './camrobo/camrobo.png';
+import camroboInsetIconURL from './camrobo/camrobo-small.png';
 export default [
     {
         name: (
@@ -317,5 +319,25 @@ export default [
             />
         ),
         helpLink: 'https://scratch.mit.edu/vernier'
+    },
+    {
+        name: (
+            <FormattedMessage
+                defaultMessage="Camrobo"
+                description="Name for the 'Camrobo' extension"
+                id="gui.extension.camrobo.name"
+            />
+        ),
+        extensionId: 'camrobo',
+        iconURL: camroboIconURL,
+        insetIconURL: camroboInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="きみのカムロボを操作してみよう！"
+                description="Description for the 'camrobo' extension"
+                id="gui.extension.camrobo.description"
+            />
+        ),
+        featured: true
     }
 ];
